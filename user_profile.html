@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - CinePoint</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="user_profile.css"> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                CinePoint
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/065/986/509/small/classic-film-clapperboard-isolated-on-white-background-ready-for-your-movie-production-or-cinema-project-png.png" alt="Ícone de Claquete" class="logo-icon">
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar filmes, séries...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="user_profile.html" class="active">Meu Perfil</a></li>
+                    <li><a href="#">Recomendados</a></li>
+                    <li><a href="#">Lançamentos</a></li>
+                    <li class="auth-links">
+                        <a href="#" class="login-link">Login</a>
+                        <a href="#" class="signup-link">Cadastre-se</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content user-profile-page">
+        <div class="container user-profile-layout">
+            <aside class="sidebar">
+                <div class="user-avatar">
+                    <img src="https://i.pinimg.com/736x/b8/38/4d/b8384dc3955cd72a44224e3fd9089745.jpg" alt="Avatar do Usuário" class="avatar-img">
+                    <h3 class="username">Pernalonga Cinéfilo</h3>
+                    <p class="user-status">Membro desde 1940</p>
+                </div>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#" class="active"><i class="fas fa-user"></i> Meu Perfil</a></li>
+                        <li><a href="meus_filmes.html"><i class="fas fa-film"></i> Meus Filmes</a></li>
+                        <li><a href="minhas_series.html"><i class="fas fa-tv"></i> Minhas Séries</a></li>
+                        <li><a href="#"><i class="fas fa-bookmark"></i> Minha Lista</a></li>
+                        <li><a href="#"><i class="fas fa-star"></i> Minhas Avaliações</a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i> Recomendações</a></li>
+                        <li><a href="#"><i class="fas fa-comments"></i> Falar com o CinePilot</a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> Configurações</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <section class="profile-content">
+                <div class="profile-header-section">
+                    <h1 class="profile-title">Olá, Pernalonga! Bem-vindo de volta.</h1>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>120 Filmes Assistidos</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>45 Assistidos em 2025</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>Média de Avaliação: 8.4/10</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <span>Seguindo: 50 | Seguidores: 15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-section recent-watches-section">
+                    <h2 class="section-title"><i class="fas fa-history"></i> Últimos Assistidos</h2>
+                    <div class="movies-grid">
+                        <div class="movie-card">
+                            <img src="https://image.tmdb.org/t/p/w500/tK5gQe813v53f40wZ5283T6Gg45.jpg" alt="Duna: Parte Dois" class="movie-poster">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Duna: Parte Dois</h3>
+                                <p class="movie-year">2024</p>
+                                <p class="movie-genre">Ficção Científica, Aventura</p>
+                                <span class="movie-rating"><i class="fas fa-star"></i> 9.2/10</span>
+                                <a href="#" class="watch-now-btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://image.tmdb.org/t/p/w500/1XQk4fR878D8jY8L21k96c7Zk7.jpg" alt="Vidas Passadas" class="movie-poster">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Vidas Passadas</h3>
+                                <p class="movie-year">2023</p>
+                                <p class="movie-genre">Romance, Drama</p>
+                                <span class="movie-rating"><i class="fas fa-star"></i> 8.8/10</span>
+                                <a href="#" class="watch-now-btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://image.tmdb.org/t/p/w500/uJgUaRzX51yJ8e0cQ9P6y7Y5K8.jpg" alt="Oppenheimer" class="movie-poster">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Oppenheimer</h3>
+                                <p class="movie-year">2023</p>
+                                <p class="movie-genre">Drama, História</p>
+                                <span class="movie-rating"><i class="fas fa-star"></i> 9.1/10</span>
+                                <a href="#" class="watch-now-btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-all-link">
+                        <a href="#">Ver todos os assistidos <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-section watchlist-section">
+                    <h2 class="section-title"><i class="fas fa-bookmark"></i> Minha Watchlist</h2>
+                    <div class="movies-grid">
+                        <div class="movie-card">
+                            <img src="https://image.tmdb.org/t/p/w500/AcoV5V1eM2sF0iQ7w7002n7Y3i4.jpg" alt="Pôster do Filme A Chegada" class="movie-poster">
+                            <div class="movie-info">
+                                <h3 class="movie-title">A Chegada</h3>
+                                <p class="movie-year">2016</p>
+                                <p class="movie-genre">Ficção Científica, Drama</p>
+                                <span class="movie-rating"><i class="fas fa-star"></i> 8.0/10</span>
+                                <a href="#" class="watch-now-btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://image.tmdb.org/t/p/w500/rX0B8gq5x9b3Xm3J4Y0hG7lP52P.jpg" alt="Pôster do Filme Parasita" class="movie-poster">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Parasita</h3>
+                                <p class="movie-year">2019</p>
+                                <p class="movie-genre">Comédia, Drama, Thriller</p>
+                                <span class="movie-rating"><i class="fas fa-star"></i> 8.5/10</span>
+                                <a href="#" class="watch-now-btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <img src="https://image.tmdb.org/t/p/w500/pB8BM7pdSPz6BcdadzP6TayFDIA.jpg" alt="Pôster do Filme Whiplash: Em Busca da Perfeição" class="movie-poster">
+                            <div class="movie-info">
+                                <h3 class="movie-title">Whiplash: Em Busca da Perfeição</h3>
+                                <p class="movie-year">2014</p>
+                                <p class="movie-genre">Drama, Musical</p>
+                                <span class="movie-rating"><i class="fas fa-star"></i> 8.3/10</span>
+                                <a href="#" class="watch-now-btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-all-link">
+                        <a href="#">Ver toda a Watchlist <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="card-section cinepilot-chat-section">
+                    <h2 class="section-title"><i class="fas fa-robot"></i> Fale com o CinePilot</h2>
+                    <p>Tem alguma dúvida, sugestão ou precisa de ajuda com o site? Nosso assistente inteligente, CinePilot, está pronto para te atender!</p>
+                    <div class="chat-interface">
+                        <div class="chat-messages">
+                            <div class="message from-cinepilot">Olá! Como posso ajudar você hoje, Pernalonga?</div>
+                            <div class="message from-user">Gostaria de saber qual filme devo assistir hoje à noite.</div>
+                            <div class="message from-cinepilot">Certo! Você prefere um filme de qual gênero ou com qual ator/atriz?</div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Digite sua mensagem aqui...">
+                            <button><i class="fas fa-paper-plane"></i> Enviar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 CinePoint. Todos os direitos reservados. Projeto de graduação ainda em progresso.</p>
+        </div>
+    </footer>
+</body>
+</html>
