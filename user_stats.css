@@ -1,0 +1,144 @@
+/* Este CSS é para o layout específico da página de estatísticas */
+
+/* Importante: Assumimos que 'style.css' já contém:
+   - Variáveis de cores (:root)
+   - Estilos base (body, container, a, button, h1, h2, h3)
+   - Estilos do Header (main-header, header-content, logo, search-bar, main-nav)
+     (incluindo os ajustes para os botões de Login/Cadastre-se com flexbox)
+   - Estilos do Footer (main-footer)
+   - Media Queries para responsividade geral
+*/
+
+/* Layout principal da página de estatísticas */
+.user-stats-page .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.section-title i {
+    margin-right: 15px;
+    color: var(--text-color);
+}
+
+/* Grid de cards de estatísticas */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch; /* Garante que os cards tenham a mesma altura na linha */
+}
+
+.stats-card {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o conteúdo para cima e para baixo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(230, 184, 0, 0.4);
+}
+
+.stats-card h3 {
+    font-size: 1.6em;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o título e o ícone */
+    gap: 10px;
+}
+
+.stats-card h3 i {
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+.stats-card ol {
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0;
+    margin: 0 auto; /* Centraliza a lista */
+    text-align: left; /* Alinha o texto dos itens à esquerda */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    max-width: 100%; /* Garante que não transborde */
+    counter-reset: item; /* ISSO REINICIA O CONTADOR PARA CADA OL */
+}
+
+.stats-card ul {
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0;
+    margin: 0 auto; /* Centraliza a lista */
+    text-align: left; /* Alinha o texto dos itens à esquerda */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    max-width: 100%; /* Garante que não transborde */
+}
+
+.stats-card li {
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    /* Ajuste aqui: aumente o padding-left para dar espaço ao número */
+    padding-left: 28px; /* Era 10px, agora tem espaço para o número */
+    position: relative;
+}
+
+/* Adicionar um marcador customizado para as listas */
+.stats-card ol li::before {
+    content: counter(item) ". "; /* Numeração para listas ordenadas */
+    counter-increment: item;
+    color: var(--accent-color);
+    font-weight: 600;
+    position: absolute;
+    left: 0; /* Começa da esquerda do padding-left */
+    width: 25px; /* Define uma largura para o número, garantindo espaço */
+    text-align: right; /* Alinha o número à direita dentro de sua largura */
+}
+
+.stats-card ul li::before {
+    content: "• "; /* Marcador de lista para listas não ordenadas */
+    color: var(--accent-color);
+    font-weight: 600;
+    position: absolute; /* Adicionado para controle de posicionamento */
+    left: 0; /* Alinha à esquerda do padding do LI */
+}
+
+.stats-card p {
+    font-size: 1.2em;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* Media Queries específicas para user_stats.css */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+
+    .stats-card {
+        padding: 20px;
+    }
+
+    .stats-card h3 {
+        font-size: 1.4em;
+    }
+
+    .stats-card ol,
+    .stats-card ul {
+        width: 100%; /* Ocupa a largura total */
+    }
+}

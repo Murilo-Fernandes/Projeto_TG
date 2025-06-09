@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil - CinePoint</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="user_profile.css"> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="user_profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -24,7 +25,7 @@
                     <li><a href="user_profile.html" class="active">Meu Perfil</a></li>
                     <li><a href="#">Recomendados</a></li>
                     <li><a href="#">Lançamentos</a></li>
-                    <li class="auth-links">
+                    <li><a href="user_stats.html">Minhas Estatísticas</a></li> <li class="auth-links">
                         <a href="#" class="login-link">Login</a>
                         <a href="#" class="signup-link">Cadastre-se</a>
                     </li>
@@ -46,7 +47,7 @@
                         <li><a href="#" class="active"><i class="fas fa-user"></i> Meu Perfil</a></li>
                         <li><a href="meus_filmes.html"><i class="fas fa-film"></i> Meus Filmes</a></li>
                         <li><a href="minhas_series.html"><i class="fas fa-tv"></i> Minhas Séries</a></li>
-                        <li><a href="#"><i class="fas fa-bookmark"></i> Minha Lista</a></li>
+                        <li><a href="#"><i class="fas fa-bookmark"></i> Minhas Listas</a></li>
                         <li><a href="#"><i class="fas fa-star"></i> Minhas Avaliações</a></li>
                         <li><a href="#"><i class="fas fa-heart"></i> Recomendações</a></li>
                         <li><a href="#"><i class="fas fa-comments"></i> Falar com o CinePilot</a></li>
@@ -62,19 +63,19 @@
                     <div class="profile-stats">
                         <div class="stat-item">
                             <i class="fas fa-ticket-alt"></i>
-                            <span>120 Filmes Assistidos</span>
+                            <span>150 Obras Assistidas</span>
                         </div>
                         <div class="stat-item">
                             <i class="fas fa-calendar-alt"></i>
                             <span>45 Assistidos em 2025</span>
                         </div>
                         <div class="stat-item">
-                            <i class="fas fa-star-half-alt"></i>
-                            <span>Média de Avaliação: 8.4/10</span>
+                            <i class="fas fa-clock"></i>
+                            <span>300 Horas Assistidas</span>
                         </div>
                         <div class="stat-item">
-                            <i class="fas fa-users"></i>
-                            <span>Seguindo: 50 | Seguidores: 15</span>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>Média de Avaliação: 8.4/10</span>
                         </div>
                     </div>
                 </div>
@@ -83,32 +84,35 @@
                     <h2 class="section-title"><i class="fas fa-history"></i> Últimos Assistidos</h2>
                     <div class="movies-grid">
                         <div class="movie-card">
-                            <img src="https://image.tmdb.org/t/p/w500/tK5gQe813v53f40wZ5283T6Gg45.jpg" alt="Duna: Parte Dois" class="movie-poster">
+                            <img src="https://br.web.img2.acsta.net/img/73/d2/73d239956fd63e7af3bce7c22cbfbc31.jpg" alt="Ballerina" class="movie-poster">
                             <div class="movie-info">
-                                <h3 class="movie-title">Duna: Parte Dois</h3>
-                                <p class="movie-year">2024</p>
-                                <p class="movie-genre">Ficção Científica, Aventura</p>
-                                <span class="movie-rating"><i class="fas fa-star"></i> 9.2/10</span>
+                                <h3 class="movie-title">Do universo de John Wick: Ballerina</h3>
+                                <p class="my-rating">Minha Avaliação: 8.5/10</p>
+                                <p class="movie-year">2025</p>
+                                <p class="movie-genre">Ação, Suspense</p>
+                                <span class="movie-rating">Média: <i class="fas fa-star"></i> 7/10</span>
                                 <a href="#" class="watch-now-btn">Ver Detalhes</a>
                             </div>
                         </div>
                         <div class="movie-card">
-                            <img src="https://image.tmdb.org/t/p/w500/1XQk4fR878D8jY8L21k96c7Zk7.jpg" alt="Vidas Passadas" class="movie-poster">
+                            <img src="https://image.tmdb.org/t/p/original/glzX7ZucKlrudsqVPwvHZaHYi4R.jpg" alt="Twin Peaks" class="movie-poster">
                             <div class="movie-info">
-                                <h3 class="movie-title">Vidas Passadas</h3>
-                                <p class="movie-year">2023</p>
-                                <p class="movie-genre">Romance, Drama</p>
-                                <span class="movie-rating"><i class="fas fa-star"></i> 8.8/10</span>
+                                <h3 class="movie-title">Twin Peaks</h3>
+                                <p class="my-rating">Minha Avaliação: 10/10</p>
+                                <p class="movie-year">1990</p>
+                                <p class="movie-genre">Crime, Drama, Suspense</p>
+                                <span class="movie-rating">Média: <i class="fas fa-star"></i> 9.2/10</span>
                                 <a href="#" class="watch-now-btn">Ver Detalhes</a>
                             </div>
                         </div>
                         <div class="movie-card">
-                            <img src="https://image.tmdb.org/t/p/w500/uJgUaRzX51yJ8e0cQ9P6y7Y5K8.jpg" alt="Oppenheimer" class="movie-poster">
+                            <img src="https://uauposters.com.br/media/catalog/product/1/8/181520140528-uau-posters-filmes-bonequinha-luxo-breakfast-at-tiffany-audrey-hepburn.jpg" alt="Bonequinha de Luxo" class="movie-poster">
                             <div class="movie-info">
-                                <h3 class="movie-title">Oppenheimer</h3>
-                                <p class="movie-year">2023</p>
-                                <p class="movie-genre">Drama, História</p>
-                                <span class="movie-rating"><i class="fas fa-star"></i> 9.1/10</span>
+                                <h3 class="movie-title">Bonequinha de Luxo</h3>
+                                <p class="my-rating">Minha Avaliação: 9.5/10</p>
+                                <p class="movie-year">1961</p>
+                                <p class="movie-genre">Romance, Comédia, Drama</p>
+                                <span class="movie-rating">Média: <i class="fas fa-star"></i> 8.5/10</span>
                                 <a href="#" class="watch-now-btn">Ver Detalhes</a>
                             </div>
                         </div>
@@ -122,7 +126,7 @@
                     <h2 class="section-title"><i class="fas fa-bookmark"></i> Minha Watchlist</h2>
                     <div class="movies-grid">
                         <div class="movie-card">
-                            <img src="https://image.tmdb.org/t/p/w500/AcoV5V1eM2sF0iQ7w7002n7Y3i4.jpg" alt="Pôster do Filme A Chegada" class="movie-poster">
+                            <img src="https://uauposters.com.br/media/catalog/product/4/5/451520230615-uau-posters-a-chegada-arrival-sci-fi-filmes-1.jpg" alt="Pôster do Filme A Chegada" class="movie-poster">
                             <div class="movie-info">
                                 <h3 class="movie-title">A Chegada</h3>
                                 <p class="movie-year">2016</p>
@@ -132,7 +136,7 @@
                             </div>
                         </div>
                         <div class="movie-card">
-                            <img src="https://image.tmdb.org/t/p/w500/rX0B8gq5x9b3Xm3J4Y0hG7lP52P.jpg" alt="Pôster do Filme Parasita" class="movie-poster">
+                            <img src="https://uauposters.com.br/media/catalog/product/5/2/523420201013-uau-posters-filmes-parasite-parasite-1.jpg" alt="Pôster do Filme Parasita" class="movie-poster">
                             <div class="movie-info">
                                 <h3 class="movie-title">Parasita</h3>
                                 <p class="movie-year">2019</p>
@@ -142,7 +146,7 @@
                             </div>
                         </div>
                         <div class="movie-card">
-                            <img src="https://image.tmdb.org/t/p/w500/pB8BM7pdSPz6BcdadzP6TayFDIA.jpg" alt="Pôster do Filme Whiplash: Em Busca da Perfeição" class="movie-poster">
+                            <img src="https://m.media-amazon.com/images/I/61FlrI8s5RL._AC_UF894,1000_QL80_.jpg" alt="Pôster do Filme Whiplash: Em Busca da Perfeição" class="movie-poster">
                             <div class="movie-info">
                                 <h3 class="movie-title">Whiplash: Em Busca da Perfeição</h3>
                                 <p class="movie-year">2014</p>
